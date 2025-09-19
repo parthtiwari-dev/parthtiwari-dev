@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=500&lines=Aspiring+AI+Engineer;Building+Production+Systems;Fraud+Detection+Expert;Data+Analytics+Specialist)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=500&lines=Aspiring+AI+Engineer;Building+Production+Systems;Fraud+Detection+Expert)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/parth-tiwar1)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:parthti2003@gmail.com)
