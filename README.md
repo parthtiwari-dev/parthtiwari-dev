@@ -25,7 +25,7 @@ class ParthTiwari:
         self.location = "Bengaluru, India 📍"
         self.role = "Aspiring AI Engineer"
         self.focus = ["Workflow Automation", "Python Systems", "Fraud Detection", "SQL Analytics", "GenAI"]
-        self.latest_project = "FlowForge - Workflow Orchestration Engine"
+        self.latest_project = "Machine Learning & Traffic Prediction + FlowForge Workflows"
         self.goal = "Building end-to-end AI products that scale"
         
     def current_status(self):
@@ -84,6 +84,8 @@ class ParthTiwari:
 | **🔍 [FraudX](https://github.com/parthtiwari-dev/fraudx)** | Production-grade fraud detection engine | Configurable rules, Schema validation, Real-time processing |
 | **🛒 [E-commerce Simulation](https://github.com/parthtiwari-dev/E-commerce-Simulation-System)** | Enterprise-level Python system | OOP patterns, <100ms response times, Stress testing |
 | **📈 [SQL Analytics Portfolio](https://github.com/parthtiwari-dev/sql-olist-analytics-foundation)** | Advanced business intelligence projects | Brazilian e-commerce analysis, Complex queries, CTEs |
+| **🚦 [Bangalore Traffic Wasted Time Prediction](https://github.com/parthtiwari-dev/bangalore-traffic-wasted-time-prediction)** | Practical ML regression project on urban traffic data | Real-world problem framing, Feature engineering, Linear/Ridge/Lasso regression from scratch, Model evaluation |
+| **🧠 [ML From Scratch](https://github.com/parthtiwari-dev/ml-from-scratch)** | Building ML algorithms from first principles | Linear regression implementation, Multivariate regression, NumPy-based implementations, Educational ML fundamentals |
 | **🤖 [AI Engineering Journey](https://github.com/parthtiwari-dev/AI-Engineer-Journey)** | Live ML/GenAI documentation | Practical implementations, System design patterns |
 | **🎬 [IMDb SQL Challenges](https://github.com/parthtiwari-dev/IMDb-SQL-Practice-Project)** | Interview-ready SQL problems | 40+ challenges, Window functions, Advanced analytics |
 
@@ -170,7 +172,7 @@ graph LR
 
 **📍 Based in Bengaluru** | **🤝 Open to collaboration** | **📈 Available for opportunities**
 
-**Built with ❤️ and Python** | **Last updated: September 2025**
+**Built with ❤️ and Python** | **Last updated: November 2025**
 
 ⭐ **If you find my work interesting, consider giving my repositories a star!** ⭐
 
