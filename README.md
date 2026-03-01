@@ -1,161 +1,132 @@
-# 👨‍🔬 Parth Tiwari
-
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=2800&pause=800&color=00F7FF&center=true&vCenter=true&width=700&lines=AI+Systems+Engineer;Agentic+%26+Evaluation-Driven+AI;Production-Grade+ML+Infrastructure;RAG+%7C+LLMs+%7C+Real-Time+Systems)](https://git.io/typing-svg)
+# 🧠 PARTH TIWARI
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=2500&pause=800&color=00F7FF&center=true&vCenter=true&width=800&lines=AI+Systems+Engineer;Agentic+AI+Architect;RAG+%7C+ML+Infrastructure;Building+AI+that+Survives+Reality)](https://git.io/typing-svg)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,100:0f2027&height=120&section=header"/>
 
 </div>
 
 ---
 
-## ⚡ Who I Am
+## ░░ WHO I BUILD AS ░░
 
-I design and deploy **evaluation-driven AI systems** that operate under real-world constraints.
+I don’t just call LLM APIs.
 
-Not demo notebooks.  
-Not prompt wrappers.  
-Actual systems with:
+I design **systems** around them.
 
-- Structured validation
-- Regression testing
-- Latency budgets
-- Drift awareness
-- Controlled failure modes
+Production-first.  
+Evaluation-driven.  
+Failure-aware.
 
-Currently focused on:
-- Agentic AI systems
-- RAG architectures
-- ML reliability
-- Production-grade ML pipelines
+Every project I ship:
+- has structured validation
+- measurable metrics
+- deployment constraints
+- regression tracking
+- real users
 
 ---
 
-# 🧠 Deployed Systems
+# ◢◤ DEPLOYED AI SYSTEMS ◢◤
 
 ---
 
-## 🔁 QueryPilot — Self-Correcting Text-to-SQL Agent
-**Multi-agent LLM system with schema-aware retrieval & bounded correction**
+## ⚡ QUERY PILOT  
+**Self-correcting Text-to-SQL agent**
 
-🔗 Repo: https://github.com/parthtiwari-dev/querypilot  
-🌐 Live API: https://querypilot-backend.onrender.com/docs  
+🌐 Live → https://querypilot-backend.onrender.com/docs  
+🔗 Code → https://github.com/parthtiwari-dev/querypilot  
 
-**What it does**
-- Converts natural language → executable SQL
-- Uses schema-linking + retrieval filtering
-- Bounded LangGraph-style correction loop
-- Structured static validation before execution
+> Multi-step agent that retrieves schema, generates SQL, validates, executes, self-corrects.
 
-**Evaluation**
-- ~95% execution success (80-query benchmark)
-- Cross-schema generalization testing
-- Hallucination + correction lift metrics tracked
+**95% execution success**  
+Bounded correction loop  
+Cross-schema generalization  
+Hallucination tracking  
 
-This is not prompt chaining.
-It’s a controlled agent interacting with a database environment.
+This is controlled autonomy — not prompt chaining.
 
 ---
 
-## 🛡️ UPI Fraud Detection Engine
-**Real-time fraud decision system with strict temporal validation**
+## 🛡 UPI FRAUD ENGINE  
+**Real-time fraud decision system**
 
-🔗 Repo: https://github.com/parthtiwari-dev/upi-fraud-engine  
-🌐 API: https://upi-fraud-engine.onrender.com/docs  
-🖥 UI: https://upi-fraud-engine.streamlit.app/
+🌐 API → https://upi-fraud-engine.onrender.com/docs  
+🖥 UI → https://upi-fraud-engine.streamlit.app/  
+🔗 Code → https://github.com/parthtiwari-dev/upi-fraud-engine  
 
-**Highlights**
-- 482+ point-in-time features
-- Strict leakage validation
-- Offline ROC-AUC: ~0.895
-- <500ms inference latency
-- Alert budget constraint: ≤0.5%
+482+ temporal features  
+Strict leakage validation  
+ROC-AUC ~0.895  
+<500ms inference  
 
-Includes:
-- Temporal split with delay simulation
-- Training-serving drift analysis
-- Day-by-day backtesting
-
-Built like a real payment system, not a Kaggle model.
+Built like a payment system, not a Kaggle notebook.
 
 ---
 
-## 🧬 Evidence-Bound Drug RAG
-**Hybrid retrieval medical knowledge system with controlled refusal**
+## 🧬 EVIDENCE-BOUND DRUG RAG  
+**Grounded medical knowledge system**
 
-🔗 Repo: https://github.com/parthtiwari-dev/Evidence-Bound-Drug-RAG  
-🌐 Live API: https://evidence-bound-drug-rag.streamlit.app/  
-🤗 HF Space: https://huggingface.co/spaces/parthtiwar1/drug-rag-api  
+🌐 App → https://evidence-bound-drug-rag.streamlit.app/  
+🔗 Code → https://github.com/parthtiwari-dev/Evidence-Bound-Drug-RAG  
 
-**Architecture**
-- 20 FDA/NICE documents
-- 853 semantic chunks
-- Hybrid search (vector + BM25)
-- Citation-grounded generation
+853 semantic chunks  
+Hybrid retrieval (vector + BM25)  
+Faithfulness ~0.80  
+100% refusal on unsupported queries  
 
-**Evaluation**
-- RAGAS Score: ~0.71
-- Faithfulness: ~0.80
-- 100% refusal accuracy on unsupported queries
-
-Designed to reduce hallucination in high-risk domains.
+Engineered for high-risk domains.
 
 ---
 
-# 🏗 Engineering Philosophy
+# ░░ ENGINEERING DNA ░░
 
-> AI systems are non-deterministic.  
-> Reliability must be engineered — not assumed.
+> Non-deterministic systems demand deterministic discipline.
 
-I focus on:
+I obsess over:
 
-- Measuring before optimizing  
-- Designing for adversarial failure  
-- Enforcing validation layers  
-- Tracking regressions across versions  
-- Building systems that survive distribution shift  
-
----
-
-# 🛠 Core Stack
-
-**Languages**  
-Python, SQL  
-
-**LLM / GenAI**  
-RAG, LangGraph-style orchestration, Tool-calling workflows, Hybrid retrieval  
-
-**ML & Modeling**  
-XGBoost, Feature Engineering, Drift Analysis, Evaluation Harnesses  
-
-**Infra & Systems**  
-FastAPI, Docker, PostgreSQL, DuckDB, Chroma, CI-driven testing  
+• Evaluation harnesses  
+• Regression safety  
+• Drift detection  
+• Latency budgets  
+• Controlled agent loops  
+• Reliability before scale  
 
 ---
 
-# 📊 System Metrics Snapshot
+# ◢◤ CORE WEAPONS ◢◤
 
-| System | Key Metric |
-|--------|------------|
-| QueryPilot | ~95% SQL execution success |
-| Fraud Engine | ROC-AUC ~0.895 |
-| Drug RAG | Faithfulness ~0.80 |
+Python  
+FastAPI  
+XGBoost  
+LangGraph  
+Chroma  
+DuckDB  
+PostgreSQL  
+Docker  
 
----
-
-# 🛰 Currently Exploring
-
-- Agentic AI at scale
-- Evaluation frameworks for non-deterministic systems
-- Reinforcement-inspired improvement loops
-- Latency-sensitive AI deployment
+I build systems.  
+Not slides.
 
 ---
 
 <div align="center">
 
-### 🧠 Building AI that survives reality.
+<img src="https://github-readme-stats.vercel.app/api?username=parthtiwari-dev&theme=tokyonight&hide_border=true&show_icons=true"/>
+
+</div>
+
+---
+
+<div align="center">
+
+### ░ CONNECT ░
 
 [LinkedIn](https://www.linkedin.com/in/parth-tiwar1) • 
-[GitHub](https://github.com/parthtiwari-dev)
+[Email](mailto:parthti2003@gmail.com)
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:000000&height=120&section=footer"/>
