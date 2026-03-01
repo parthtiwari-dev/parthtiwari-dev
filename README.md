@@ -1,58 +1,161 @@
-# 👋 Hi, I'm **Parth Tiwari**
+# 👨‍🔬 Parth Tiwari
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=28&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=500&lines=AI+Engineer;Building+ML+Systems;RAG+%26+LLM+Applications;Production+ML+Engineer)](https://git.io/typing-svg)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/parth-tiwar1) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:parthti2003@gmail.com) [![GitHub followers](https://img.shields.io/github/followers/parthtiwari-dev?logo=github&style=flat-square&color=2F81F7)](https://github.com/parthtiwari-dev)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=26&duration=2800&pause=800&color=00F7FF&center=true&vCenter=true&width=700&lines=AI+Systems+Engineer;Agentic+%26+Evaluation-Driven+AI;Production-Grade+ML+Infrastructure;RAG+%7C+LLMs+%7C+Real-Time+Systems)](https://git.io/typing-svg)
 
 </div>
 
 ---
 
-### 🚀 About Me
+## ⚡ Who I Am
 
-> **Building intelligent systems that solve real problems.**
+I design and deploy **evaluation-driven AI systems** that operate under real-world constraints.
 
-I'm a **B.Tech Computer Science graduate** and current **PG student in Data Science & GenAI**, specializing in production-grade AI applications. My work spans **real-time ML systems**, **RAG pipelines**, **fraud detection**, and **enterprise-grade Python architecture**.
+Not demo notebooks.  
+Not prompt wrappers.  
+Actual systems with:
 
-```python
-class ParthTiwari:
-    def __init__(self):
-        self.location = "Bengaluru, India 📍"
-        self.role = "AI Engineer"
-        self.focus = ["ML Systems", "RAG Pipelines", "LLMs", "MLOps"]
-        self.latest_work = "UPI Fraud Detection + Evidence-Based Drug RAG"
-        self.goal = "Building production AI systems 🚀"
-```
+- Structured validation
+- Regression testing
+- Latency budgets
+- Drift awareness
+- Controlled failure modes
 
-### 🛠️ Tech Stack
+Currently focused on:
+- Agentic AI systems
+- RAG architectures
+- ML reliability
+- Production-grade ML pipelines
 
-| Category | Skills |
-|----------|--------|
-| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white) |
-| **Data & ML** | ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) |
-| **Tools** | ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white) |
+---
 
-### 🏆 Featured Projects
+# 🧠 Deployed Systems
 
-| Project | Description | Tech Stack |
-|---------|-------------|-----------|
-| **🛡️ [UPI Fraud Engine](https://github.com/parthtiwari-dev/upi-fraud-engine)** | Real-time fraud detection system (0.8953 ROC-AUC, <500ms latency, live production) | XGBoost, FastAPI, DuckDB |
-| **🧬 [Evidence-Bound Drug RAG](https://github.com/parthtiwari-dev/Evidence-Bound-Drug-RAG)** | RAG system for evidence-based drug information retrieval | LlamaIndex, RAG, NLP |
-| **🔍 [Fraud Risk Intelligence](https://github.com/parthtiwari-dev/Fraud-Risk-Intelligence-System)** | End-to-end ML pipeline with feature engineering & ensemble models | ML, Pydantic, Real-time |
-| **⚡ [FlowForge](https://github.com/parthtiwari-dev/FlowForge)** | Python workflow orchestration engine for data & ML pipelines | Python, OOP, Design Patterns |
-| **🛒 [E-commerce Sys](https://github.com/parthtiwari-dev/E-commerce-Simulation-System)** | High-performance Python backend with enterprise design patterns | Python, Caching, Stress Testing |
-| **📈 [Olist Analytics](https://github.com/parthtiwari-dev/sql-olist-analytics-foundation)** | BI project analyzing 100k+ Brazilian e-commerce orders | SQL, CTEs, Data Modeling |
+---
 
-### 📊 GitHub Stats
+## 🔁 QueryPilot — Self-Correcting Text-to-SQL Agent
+**Multi-agent LLM system with schema-aware retrieval & bounded correction**
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=parthtiwari-dev&theme=react&hide_border=true&include_all_commits=true&count_private=true) ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=parthtiwari-dev&theme=react&hide_border=true&layout=compact)
+🔗 Repo: https://github.com/parthtiwari-dev/querypilot  
+🌐 Live API: https://querypilot-backend.onrender.com/docs  
 
-### 🎯 Connect With Me
+**What it does**
+- Converts natural language → executable SQL
+- Uses schema-linking + retrieval filtering
+- Bounded LangGraph-style correction loop
+- Structured static validation before execution
 
-- 🔭 Working on: **Production ML Systems & RAG Applications**
-- 🤝 Open to: **AI Engineer roles & Open Source collaborations**
-- 💬 Ask me about: **ML Systems, RAG Pipelines & Python Architecture**
+**Evaluation**
+- ~95% execution success (80-query benchmark)
+- Cross-schema generalization testing
+- Hallucination + correction lift metrics tracked
 
-**📍 Bengaluru, India** | **Last updated: February 2026**
+This is not prompt chaining.
+It’s a controlled agent interacting with a database environment.
+
+---
+
+## 🛡️ UPI Fraud Detection Engine
+**Real-time fraud decision system with strict temporal validation**
+
+🔗 Repo: https://github.com/parthtiwari-dev/upi-fraud-engine  
+🌐 API: https://upi-fraud-engine.onrender.com/docs  
+🖥 UI: https://upi-fraud-engine.streamlit.app/
+
+**Highlights**
+- 482+ point-in-time features
+- Strict leakage validation
+- Offline ROC-AUC: ~0.895
+- <500ms inference latency
+- Alert budget constraint: ≤0.5%
+
+Includes:
+- Temporal split with delay simulation
+- Training-serving drift analysis
+- Day-by-day backtesting
+
+Built like a real payment system, not a Kaggle model.
+
+---
+
+## 🧬 Evidence-Bound Drug RAG
+**Hybrid retrieval medical knowledge system with controlled refusal**
+
+🔗 Repo: https://github.com/parthtiwari-dev/Evidence-Bound-Drug-RAG  
+🌐 Live API: https://evidence-bound-drug-rag.streamlit.app/  
+🤗 HF Space: https://huggingface.co/spaces/parthtiwar1/drug-rag-api  
+
+**Architecture**
+- 20 FDA/NICE documents
+- 853 semantic chunks
+- Hybrid search (vector + BM25)
+- Citation-grounded generation
+
+**Evaluation**
+- RAGAS Score: ~0.71
+- Faithfulness: ~0.80
+- 100% refusal accuracy on unsupported queries
+
+Designed to reduce hallucination in high-risk domains.
+
+---
+
+# 🏗 Engineering Philosophy
+
+> AI systems are non-deterministic.  
+> Reliability must be engineered — not assumed.
+
+I focus on:
+
+- Measuring before optimizing  
+- Designing for adversarial failure  
+- Enforcing validation layers  
+- Tracking regressions across versions  
+- Building systems that survive distribution shift  
+
+---
+
+# 🛠 Core Stack
+
+**Languages**  
+Python, SQL  
+
+**LLM / GenAI**  
+RAG, LangGraph-style orchestration, Tool-calling workflows, Hybrid retrieval  
+
+**ML & Modeling**  
+XGBoost, Feature Engineering, Drift Analysis, Evaluation Harnesses  
+
+**Infra & Systems**  
+FastAPI, Docker, PostgreSQL, DuckDB, Chroma, CI-driven testing  
+
+---
+
+# 📊 System Metrics Snapshot
+
+| System | Key Metric |
+|--------|------------|
+| QueryPilot | ~95% SQL execution success |
+| Fraud Engine | ROC-AUC ~0.895 |
+| Drug RAG | Faithfulness ~0.80 |
+
+---
+
+# 🛰 Currently Exploring
+
+- Agentic AI at scale
+- Evaluation frameworks for non-deterministic systems
+- Reinforcement-inspired improvement loops
+- Latency-sensitive AI deployment
+
+---
+
+<div align="center">
+
+### 🧠 Building AI that survives reality.
+
+[LinkedIn](https://www.linkedin.com/in/parth-tiwar1) • 
+[GitHub](https://github.com/parthtiwari-dev)
+
+</div>
