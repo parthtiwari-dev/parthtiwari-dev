@@ -323,7 +323,20 @@ step 8  →  repeat when production proves you wrong
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=16&duration=3000&pause=1200&color=4FC3F7&center=true&vCenter=true&width=650&lines=open+to+AI+Engineer+roles+%E2%80%94+Bengaluru+%2F+remote;if+you+want+systems+that+work%2C+not+demos+that+look+good%3B;let%27s+talk.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com
+?font=JetBrains+Mono
+&weight=600
+&size=20
+&duration=2500
+&pause=800
+&color=4FC3F7
+&center=true
+&vCenter=true
+&multiline=true
+&width=700
+&lines=Open+to+AI+Engineer+%2F+Software+Engineer+roles;Bengaluru%2C+Mumbai%2C+Delhi+NCR%2C+Pune%2C+Hyderabad+%2B+Remote;I+care+about+systems+that+work%2C+not+just+flashy+demos%3B+let%27s+talk.)
+](https://git.io/typing-svg)
+
 
 <br/>
 
