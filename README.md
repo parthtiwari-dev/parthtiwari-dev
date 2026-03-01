@@ -1,18 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:0a0a1a,100:000d1f&height=300&section=header&text=PARTH%20TIWARI&fontSize=80&fontColor=00e5ff&fontAlignY=45&desc=AI%20Systems%20Engineer&descSize=22&descAlignY=65&descColor=4fc3f7&animation=fadeIn&stroke=00e5ff&strokeWidth=1" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:0a0a1a,100:000d1f&height=280&section=header&text=PARTH%20TIWARI&fontSize=78&fontColor=00e5ff&fontAlignY=45&desc=AI%20Systems%20Engineer%20%E2%80%93%20Bengaluru%2C%20India&descSize=20&descAlignY=67&descColor=4fc3f7&animation=fadeIn&stroke=00e5ff&strokeWidth=1" width="100%"/>
 
-</div>
+<br/>
 
-<div align="center">
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&duration=2800&pause=1000&color=00E5FF&center=true&vCenter=true&width=750&lines=I+don't+call+APIs+and+claim+to+be+an+AI+Engineer.;I+build+systems+that+survive+production.;Evaluation-driven.+Failure-aware.+Deployed.;From+first+principles+%E2%80%94+always.)](https://git.io/typing-svg)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=2800&pause=1000&color=00E5FF&center=true&vCenter=true&width=750&lines=I+don't+call+APIs+and+claim+to+be+an+AI+Engineer.;I+build+systems+that+survive+production.;Evaluation-driven.+Failure-aware.+Deployed.;From+first+principles+—+always.)](https://git.io/typing-svg)
-
-</div>
-
-<br>
-
-<div align="center">
+<br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/parth-tiwar1)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parthti2003@gmail.com)
@@ -27,31 +21,34 @@
 
 ## ◈ &nbsp; WHO I AM
 
-```python
-class ParthTiwari:
+> *Most AI engineers are prompt wrappers. Here's what's different.*
 
-    identity    = "AI Systems Engineer"
-    location    = "Bengaluru, India"
-    philosophy  = "First principles, not tutorials"
+```diff
+@@  diff --git a/generic-ai-engineer b/parth-tiwari  @@
 
-    def what_i_build(self):
-        return [
-            "Systems that are evaluated, not assumed",
-            "Agents with bounded, correctable behavior",
-            "Pipelines with zero leakage and real validation",
-            "Inference services with latency SLAs and drift monitoring",
-        ]
+- calls LLM API, ships demo, calls it production
++ builds evaluation harness before writing first line of model code
 
-    def what_i_refuse_to_build(self):
-        return [
-            "Demo notebooks that collapse in production",
-            "RAG apps with no faithfulness measurement",
-            "Agents that hallucinate and nobody checks",
-            "ML models with temporal leakage baked in",
-        ]
+- RAG app with no faithfulness score
++ RAG system benchmarked on 20 structured queries, RAGAS measured, logged
 
-    def current_status(self):
-        return "Shipping production AI — not slides."
+- ML model trained and deployed, drift discovered in prod
++ day-by-day backtester exposed 0.895→0.60 drift before it ever deployed
+
+- "the agent works" (tested once on happy path)
++ 95.7% execution success across 82-query benchmark with self-correction loop
+
+- features engineered, leakage not checked
++ 20+ temporal integrity tests, zero leakage baked in by design
+
+- "I use LLMs to build AI"
++ I use first principles to build systems. LLMs are one component.
+```
+
+```
+  Location  ›  Bengaluru, India
+  Status    ›  Open to AI Engineer roles
+  Signal    ›  Systems that ship > slides that pitch
 ```
 
 <br>
@@ -294,4 +291,17 @@ class ParthTiwari:
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000d1f,50:001428,100:000000&height=120&section=footer&fontColor=00e5ff" width="100%"/>
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│   $ ./parth --status                                                    │
+│                                                                         │
+│   > systems    : deployed and running                                   │
+│   > open to    : the right AI Engineer role                             │
+│   > contact    : linkedin  ·  email                                     │
+│   > philosophy : build systems, not demos                               │
+│                                                                         │
+│   ready to build something that survives reality?  let's talk.          │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+```
