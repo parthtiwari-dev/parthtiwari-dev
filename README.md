@@ -120,7 +120,7 @@ serving:
   sql_agent_p50       : ~2.3s
   deployment          : Docker · Render · Neon PostgreSQL · Streamlit · HuggingFace
 
-known_limitations    : still a fresher  ·  will fix this with time
+known_limitations    : still a fresher  ·  will fix this with time  ·  but fresh perspective · optimized for rapid iteration and high ownership
 ```
 
 <br/>
