@@ -299,20 +299,20 @@ step 8  →  repeat when production proves you wrong
 
 <div align="center">
 
-<img height="175em" src="https://github-readme-stats.vercel.app/api?username=parthtiwari-dev&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00e5ff&icon_color=4fc3f7&text_color=a0d4ff&include_all_commits=true&count_private=true"/>
-<img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=parthtiwari-dev&layout=compact&hide_border=true&bg_color=0d1117&title_color=00e5ff&text_color=a0d4ff&langs_count=6"/>
+<img height="175em" alt="Parth Tiwari GitHub stats" src="https://github-readme-stats.vercel.app/api?username=parthtiwari-dev&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00e5ff&icon_color=4fc3f7&text_color=a0d4ff&include_all_commits=true&rank_icon=github&cache_seconds=21600"/>
+<img height="175em" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=parthtiwari-dev&layout=compact&hide_border=true&bg_color=0d1117&title_color=00e5ff&text_color=a0d4ff&langs_count=6&cache_seconds=21600"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=parthtiwari-dev&hide_border=true&background=0d1117&ring=00e5ff&fire=4fc3f7&currStreakLabel=00e5ff&sideLabels=a0d4ff&dates=4a6fa5&sideNums=00e5ff&currStreakNum=4fc3f7"/>
+<img alt="GitHub contribution streak" src="https://streak-stats.demolab.com?user=parthtiwari-dev&hide_border=true&background=0d1117&ring=00e5ff&fire=4fc3f7&currStreakLabel=00e5ff&sideLabels=a0d4ff&dates=4a6fa5&sideNums=00e5ff&currStreakNum=4fc3f7"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parthtiwari-dev&bg_color=0d1117&color=4fc3f7&line=00e5ff&point=ffffff&area=true&hide_border=true&area_color=001428" width="95%"/>
+<img alt="GitHub activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=parthtiwari-dev&bg_color=0d1117&color=4fc3f7&line=00e5ff&point=ffffff&area=true&hide_border=true&area_color=001428&custom_title=Contribution%20Graph&radius=8" width="95%"/>
 
 </div>
 
