@@ -9,10 +9,11 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2800&pause=1000&color=00E5FF&center=true&vCenter=true&width=700&lines=AI+Systems+Engineer+%E2%80%94+Bengaluru%2C+India;Evaluation-driven.+Failure-aware.+Deployed.;I+don't+call+APIs+and+claim+engineering.;I+build+systems+that+survive+production.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2800&pause=1000&color=00E5FF&center=true&vCenter=true&width=760&lines=AI+Systems+Engineer+%E2%80%94+Bengaluru%2C+India;Evidence-bound.+Failure-aware.+Deployed.;I+don't+ship+wrappers.+I+ship+evaluated+systems.;9+systems+mapped+inside+EVIDENCEBOUND.)](https://git.io/typing-svg)
 
 <br/>
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-EVIDENCEBOUND-00e5ff?style=for-the-badge)](https://parth-tiwari-1.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/parth-tiwar1)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parthti2003@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-171515?style=for-the-badge&logo=github&logoColor=white)](https://github.com/parthtiwari-dev)
@@ -32,11 +33,12 @@ $ initializing parth_tiwari.profile ...
 [✓] identity          →  AI Systems Engineer
 [✓] location          →  Bengaluru, India
 [✓] status            →  open to the right problem
-[✓] philosophy        →  first principles, not tutorials
+[✓] philosophy        →  evidence before claims
 [✓] vibe-coding       →  NOT DETECTED
 [✓] evaluation        →  ACTIVE
-[✓] systems deployed  →  3  (running right now, not on my laptop)
-[✓] slides shipped    →  0
+[✓] evidence systems  →  9 mapped in EVIDENCEBOUND
+[✓] current build     →  SecondSelf
+[✓] work node         →  Stick and Dot  (AI/ML Intern)
 
 [READY] parth_tiwari.profile loaded successfully.
 ```
@@ -60,8 +62,8 @@ train ROC-AUC      →  0.895   ← model looked great
 production ROC     →  0.60    ← system was lying to itself the whole time
 
 cause:  temporal features bled future signal into past training windows
-fix:    20+ leakage validation tests, point-in-time enforcement, rebuilt from scratch
-result: 0.895 ROC-AUC that's actually trustworthy
+fix:    leakage validation, point-in-time enforcement, rebuilt from scratch
+result: precision stayed useful under a real alert budget
 ```
 
 **Shipped a Text-to-SQL agent. Hallucination detector reported 100% hallucination:**
@@ -101,26 +103,27 @@ fix:    prompt isolation + schema-scoped retrieval + re-evaluated full 82-query 
 ## ◈ &nbsp; MODEL CARD
 
 ```yaml
-model_id         : parth-tiwari-v1
-type             : AI Systems Engineer  (fresher)
+model_id         : parth-tiwari-v2
+type             : early-career AI systems engineer
 architecture     : first-principles → build → evaluate → break → fix → deploy
 training_data    : production constraints, real failure modes, measurable outcomes
 
 benchmarks:
-  text_to_sql_execution_success  : 95.7%   # 82-query ecommerce benchmark
-  cross_schema_generalization    : 100%    # zero-shot on unseen library schema
-  syntactic_hallucination_rate   : 0.0%    # schema-grounded generation
-  fraud_roc_auc                  : 0.895   # 590K transactions, temporal integrity enforced
-  fraud_precision_in_budget      : 92%     # ≤0.5% daily alert constraint
-  rag_faithfulness_score         : 0.80    # RAGAS evaluated, 20-query medical benchmark
-  rag_overall_score              : 0.71    # holistic, not cherry-picked
+  text_to_sql_execution_success  : 95.7%     # 82-query ecommerce benchmark
+  cross_schema_generalization    : 100%      # zero-shot on unseen library schema
+  syntactic_hallucination_rate   : 0.0%      # schema-grounded generation
+  fraud_precision_in_budget      : 92.06%    # 0.5% daily alert constraint
+  fraud_p95_latency              : ~386ms    # API scoring path
+  medrag_answered_faithfulness   : ~0.99     # cited medical retrieval answers
+  medrag_refusal_accuracy        : 100%      # insufficient evidence => refusal
+  vivid_beta_users               : 10+       # creative AI work under Stick and Dot
 
 serving:
-  fraud_p95_latency   : < 500ms
-  sql_agent_p50       : ~2.3s
-  deployment          : Docker · Render · Neon PostgreSQL · Streamlit · HuggingFace
+  portfolio          : EVIDENCEBOUND — 9 evidence systems, same-world overlays
+  deployment         : Docker · Render · Streamlit · HuggingFace · Vercel
+  current_focus      : SecondSelf · evidence-bound career/application OS
 
-known_limitations    : still a fresher  ·  will fix this with time  ·  but fresh perspective · optimized for rapid iteration and high ownership
+known_limitations    : early-career · still learning · high ownership · ships with boundaries
 ```
 
 <br/>
@@ -131,7 +134,7 @@ known_limitations    : still a fresher  ·  will fix this with time  ·  but fre
 
 ## ◈ &nbsp; DEPLOYED SYSTEMS
 
-> Every link below is live. Not a demo. Not a notebook. A running service.
+> Featured below: 3 public systems. Full map: [EVIDENCEBOUND](https://parth-tiwari-1.vercel.app/) — 9 nodes across personal projects, work evidence, current builds, and tooling.
 
 <br/>
 
@@ -191,18 +194,16 @@ known_limitations    : still a fresher  ·  will fix this with time  ·  but fre
   ├── ≤ 0.5% daily alert budget                         (precision is everything)
   └── simulate delayed fraud labels                     (real-world label lag)
 
-  590K transactions → 480+ point-in-time features → DuckDB feature store
-  day-by-day backtest surfaced 0.895→0.60 train/serve drift → rebuilt
-  A/B: XGBoost vs two-stage ensemble → winner selected under real budget
+  transactions → point-in-time features → leakage tests → alert-budget model
+  train/serve drift surfaced → rebuilt → re-tested under real decision constraints
 ```
 
 | Metric | Result | Context |
 |--------|--------|---------|
-| ROC-AUC | `0.895` | Offline, leakage-validated |
-| Precision in alert budget | `92%` | Only flags what matters |
-| P95 latency | `< 500ms` | Production SLA |
-| Leakage tests | `20+` | Temporal integrity proven |
-| Modeled fraud savings | `₹21.6 Cr/yr` | Stakes were real |
+| Precision in alert budget | `92.06%` | Only flags what matters |
+| P95 latency | `~386ms` | API scoring path |
+| Leakage tests | `55+` | Temporal integrity checks |
+| Backtest mode | `day-by-day` | Production-like replay |
 
 `Python` `XGBoost` `FastAPI` `DuckDB` `Great Expectations` `Docker`
 
@@ -222,21 +223,19 @@ known_limitations    : still a fresher  ·  will fix this with time  ·  but fre
 
 ```
   HARD CONSTRAINT: medical domain — hallucination is patient harm
-  ├── every claim needs a citation source
-  ├── adversarial queries must trigger refusal, not a guess
+  ├── every claim needs source evidence
+  ├── insufficient evidence must trigger refusal, not a guess
   └── faithfulness is measured, not assumed
 
-  FDA + NICE PDFs → 853 semantic chunks → hybrid retrieval (vector + BM25)
-  RAGAS benchmark: 20 structured queries → faithfulness 0.80, overall 0.71
-  zero-score failure cases logged → retrieval + refusal logic refined
+  FDA + NICE PDFs → semantic chunks → retrieval → citation → refusal policy
 ```
 
 | Metric | Result | Context |
 |--------|--------|---------|
-| RAGAS Faithfulness | `0.80` | Claims grounded in source |
-| Overall RAGAS Score | `0.71` | Holistic, 20-query eval |
-| Eval cost | `$0.168` | Cost-aware, not burning tokens |
-| Refusal behavior | `controlled` | Hallucination suppressed by design |
+| Answered faithfulness | `~0.99` | Claims grounded in source |
+| Refusal accuracy | `100%` | Unsupported requests refused |
+| Eval cost | `$0.168` | Cost-aware evaluation |
+| Boundary | `non-diagnostic` | Not medical advice |
 
 `Python` `FastAPI` `ChromaDB` `SentenceTransformers` `LangChain` `RAGAS` `Streamlit`
 
@@ -259,9 +258,9 @@ step 7  →  deploy with monitoring hooks
 step 8  →  repeat when production proves you wrong
 ```
 
-> *This is how 0.895 ROC-AUC became trustworthy instead of suspicious.*
-> *This is how "100% hallucination" turned out to be a metric bug, not a model bug.*
-> *This is how a 3-stage correction loop beat a bigger model with a better prompt.*
+> *This is how suspicious metrics become trustworthy.*
+> *This is how a metric bug gets caught before it becomes a product lie.*
+> *This is how a smaller system with gates beats a bigger prompt with vibes.*
 
 <br/>
 
@@ -284,6 +283,8 @@ step 8  →  repeat when production proves you wrong
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue-42B883?style=for-the-badge&logo=vue.js&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-111111?style=for-the-badge&logo=three.js&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
 </div>
@@ -323,12 +324,12 @@ step 8  →  repeat when production proves you wrong
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=1200&color=00E5FF&center=true&vCenter=true&width=800&repeat=1&lines=AI+Systems+Engineer+%7C+Bengaluru+India+%7C+Remote+OK;Evaluation-driven.+Production-proven.+No+demos.;Open+to+roles+India+wide+-+systems+that+WORK.)](https://git.io/typing-svg)
-
-
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=1200&color=00E5FF&center=true&vCenter=true&width=820&repeat=1&lines=AI+Systems+Engineer+%7C+Bengaluru+India+%7C+Remote+OK;Evidence-driven.+Production-aware.+No+wrapper+theatre.;Open+to+roles+India+wide+-+systems+that+WORK.)](https://git.io/typing-svg)
 
 <br/>
 
+[![Portfolio](https://img.shields.io/badge/View%20Portfolio-EVIDENCEBOUND-00e5ff?style=for-the-badge)](https://parth-tiwari-1.vercel.app/)
+&nbsp;
 [![LinkedIn](https://img.shields.io/badge/Let's%20Connect-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/parth-tiwar1)
 &nbsp;
 [![Email](https://img.shields.io/badge/Hire%20Me-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:parthti2003@gmail.com)
@@ -340,9 +341,9 @@ step 8  →  repeat when production proves you wrong
 ```
 $ ./parth --shutdown
 
-[saving state]   ✓  3 systems deployed
+[saving state]   ✓  9 evidence systems mapped
+[saving state]   ✓  3 featured systems public
 [saving state]   ✓  all evaluation harnesses active
-[saving state]   ✓  no hallucinations in production
 [saving state]   ✓  open to the right problem
 
 [goodbye]  see you on the other side of the next PR.
