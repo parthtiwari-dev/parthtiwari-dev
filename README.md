@@ -299,8 +299,28 @@ step 8  →  repeat when production proves you wrong
 
 <div align="center">
 
-<img height="175em" alt="Parth Tiwari GitHub stats" src="https://github-readme-stats.vercel.app/api?username=parthtiwari-dev&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00e5ff&icon_color=4fc3f7&text_color=a0d4ff&include_all_commits=true&rank_icon=github&cache_seconds=21600"/>
-<img height="175em" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=parthtiwari-dev&layout=compact&hide_border=true&bg_color=0d1117&title_color=00e5ff&text_color=a0d4ff&langs_count=6&cache_seconds=21600"/>
+<table>
+  <tr>
+    <th>Signal</th>
+    <th>Current State</th>
+  </tr>
+  <tr>
+    <td>Evidence systems</td>
+    <td><code>9 mapped in EVIDENCEBOUND</code></td>
+  </tr>
+  <tr>
+    <td>Featured public systems</td>
+    <td><code>QueryPilot &middot; UPI Fraud Engine &middot; MedRAG</code></td>
+  </tr>
+  <tr>
+    <td>Main stack</td>
+    <td><code>Python &middot; FastAPI &middot; RAG &middot; XGBoost &middot; Vue &middot; Three.js</code></td>
+  </tr>
+  <tr>
+    <td>Current build</td>
+    <td><code>SecondSelf - evidence-bound career OS</code></td>
+  </tr>
+</table>
 
 </div>
 
