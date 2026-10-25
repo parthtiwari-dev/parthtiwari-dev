@@ -34,15 +34,15 @@ def sequencer(F, cal):
     total = cal["totalContributions"]
     active = sum(1 for d in days if d["contributionCount"])
     peak = max(d["contributionCount"] for d in days)
-    x0, y0, pitch, cell, rp = 78, 232, (W - 48 - 78) / len(weeks), 16, 24
+    x0, y0, pitch, cell, rp = 100, 236, (W - 48 - 78) / len(weeks), 16, 24
     ramp = ["#2f4a12", "#62a117", "#9be31c", LIME]
     b = [header(F, "07", "MY YEAR", "GITHUB  ·  LAST 12 MONTHS", PAPER)]
     b.append(text(F.disp, "MY YEAR,", 64, 44, 146, PAPER, 0))
     b.append(text(F.serif, "as a beat.", 70, 44 + F.disp.width("MY YEAR,", 64, 0) + 26, 146, LIME))
     b.append(text(F.mono, f"{total} CONTRIBUTIONS  ·  {active} ACTIVE DAYS  ·  EVERY BOX IS A DAY, EVERY LIT BOX IS A BEAT",
-                  13, 48, 184, PAPER, 1.6, extra='opacity=".7"'))
+                  16, 48, 186, PAPER, 1.3, extra='opacity=".78"'))
     for r, lab in ((1, "MON"), (3, "WED"), (5, "FRI")):
-        b.append(text(F.mono, lab, 11, 48, y0 + r * rp + 12, PAPER, 1.2, extra='opacity=".5"'))
+        b.append(text(F.mono, lab, 14, 48, y0 + r * rp + 13, PAPER, 1.0, extra='opacity=".6"'))
     seen, last_label = None, -9
     cells = []
     for i, w in enumerate(weeks):
@@ -50,7 +50,7 @@ def sequencer(F, cal):
         month = dt.date.fromisoformat(first).strftime("%b").upper()
         if month != seen and i < len(weeks) - 2 and i - last_label >= 3:
             last_label = i
-            b.append(text(F.mono, month, 11, x0 + i * pitch, y0 - 14, PAPER, 1.2, extra='opacity=".55"'))
+            b.append(text(F.mono, month, 14, x0 + i * pitch, y0 - 14, PAPER, 1.0, extra='opacity=".7"'))
             seen = month
         for d in w["contributionDays"]:
             c = d["contributionCount"]
@@ -73,11 +73,11 @@ def sequencer(F, cal):
              f'<animate attributeName="x" values="{n(x0-2)};{n(x0-2)};{n(end)};{n(end)}" keyTimes="0;{0.6/T:.4f};{9.2/T:.4f};1" dur="{T}s" repeatCount="indefinite"/></rect>')
     ly = H - 56
     b.append(text(F.serif, "Most nights it was the same two or three things.", 30, 48, ly + 8, PAPER, extra='opacity=".85"'))
-    lx = W - 48 - 5 * 24 - 110
-    b.append(text(F.mono, "LESS", 11, lx, ly + 5, PAPER, 1.2, extra='opacity=".6"'))
+    lx = W - 48 - 5 * 24 - 130
+    b.append(text(F.mono, "LESS", 14, lx, ly + 6, PAPER, 1.0, extra='opacity=".7"'))
     for i, c in enumerate(["#1c1c26"] + ramp):
         b.append(f'<rect x="{lx+50+i*24}" y="{ly-10}" width="16" height="16" rx="4" fill="{c}"/>')
-    b.append(text(F.mono, "MORE", 11, lx + 50 + 5 * 24 + 6, ly + 5, PAPER, 1.2, extra='opacity=".6"'))
+    b.append(text(F.mono, "MORE", 14, lx + 50 + 5 * 24 + 6, ly + 6, PAPER, 1.0, extra='opacity=".7"'))
     return poster(H, INK, "\n".join(b), f"My year as a beat. {total} GitHub contributions over twelve months drawn as a step sequencer; "
                   f"a playhead sweeps across and lights each active day.", gx)
 
@@ -107,19 +107,19 @@ def nightclock(F, hrs):
                   f'{step("y", n(cy-rin), n(cy-rin-ln), dl, 0.6, T)}{step("height", "0", n(ln), dl, 0.6, T)}</rect></g>')
     for h in (0, 6, 12, 18):
         a = math.radians(h * 15)
-        il.append(text(F.mono, f"{h:02d}", 13, cx + (rmax + 36) * math.sin(a), cy - (rmax + 36) * math.cos(a) + 5, PAPER, 1.2, "middle"))
+        il.append(text(F.mono, f"{h:02d}", 16, cx + (rmax + 36) * math.sin(a), cy - (rmax + 36) * math.cos(a) + 5, PAPER, 1.2, "middle"))
     il.append(f'<g><path d="M{cx} {cy}V{cy-rmax-16}" stroke="{PAPER}" stroke-opacity=".7" stroke-width="2"/>'
               f'<animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy}" to="360 {cx} {cy}" dur="12s" repeatCount="indefinite"/></g>')
-    il.append(text(F.mono, "24H", 14, cx, cy + 5, PAPER, 2, "middle"))
+    il.append(text(F.mono, "24H", 17, cx, cy + 6, PAPER, 2, "middle"))
     b.append(f'<g>{"".join(il)}{fade_out(T)}</g>')
     sz, trk = fit(F.disp, f"{pct}%", 170, 500, -0.02)
     b.append(text(F.disp, f"{pct}%", sz, 640, 330, LIME, trk))
-    lines = F.mono.wrap(f"OF MY COMMITS ON BEATMIND AND ARRIVO LAND BETWEEN MIDNIGHT AND 6 AM.", 17, 480, 1.4)
+    lines = F.mono.wrap(f"OF MY COMMITS ON BEATMIND AND ARRIVO LAND BETWEEN MIDNIGHT AND 6 AM.", 20, 500, 1.2)
     for i, ln in enumerate(lines):
-        b.append(text(F.mono, ln, 17, 646, 384 + i * 28, PAPER, 1.4))
-    b.append(text(F.serif, "Not a flex. Just when the work gets done.", 36, 646, 384 + len(lines) * 28 + 50, PAPER, extra='opacity=".85"'))
-    b.append(text(F.mono, f"{len(hrs)} COMMITS  ·  {night} BETWEEN 00:00 AND 05:59", 13, 646, H - 52, PAPER, 1.6, extra='opacity=".65"'))
-    size, tr = fit(F.disp, "NIGHT SHIFT.", 70, 540, -0.02)
+        b.append(text(F.mono, ln, 20, 646, 384 + i * 32, PAPER, 1.2))
+    b.append(text(F.serif, "Not a flex. Just when the work gets done.", 36, 646, 384 + len(lines) * 32 + 56, PAPER, extra='opacity=".85"'))
+    b.append(text(F.mono, f"{len(hrs)} COMMITS  ·  {night} BETWEEN 00:00 AND 05:59", 16, 646, H - 48, PAPER, 1.2, extra='opacity=".75"'))
+    size, tr = fit(F.disp, "NIGHT SHIFT.", 70, 500, -0.02)
     b.append(text(F.disp, "NIGHT SHIFT.", size, 646, 164, PAPER, tr))
     return poster(H, COBALT, "\n".join(b), f"Night shift. A 24-hour clock of when I commit. {pct}% of commits on BeatMind and Arrivo land between midnight and 6 am.")
 
@@ -153,7 +153,7 @@ def errata(F):
     for where, bel, meas, so in ROWS:
         la = F.serif.wrap(bel, 32, wA)
         lm = F.body.wrap(meas, 18, wB)
-        ls = F.body.wrap(so, 18, wB)
+        ls = F.body.wrap(so, 18, wB - 34)
         h = max(len(la) * 36, len(lm) * 26 + 12 + len(ls) * 26) + 52
         rows.append((where, la, lm, ls, y, h))
         y += h
@@ -163,13 +163,13 @@ def errata(F):
     size, tr = fit(F.disp, "WHAT I GOT WRONG.", 76, PAGE, -0.02)
     b.append(text(F.disp, "WHAT I GOT WRONG.", size, 44, 156, PAPER, tr))
     b.append(text(F.serif, "The record is the part of my work I trust most.", 36, 48, 222, LIME))
-    b.append(text(F.mono, "I BELIEVED", 12, colA, 272, PAPER, 2.4, extra='opacity=".5"'))
-    b.append(text(F.mono, "THEN I MEASURED", 12, colB, 272, PAPER, 2.4, extra='opacity=".5"'))
+    b.append(text(F.mono, "I BELIEVED", 15, colA, 274, PAPER, 2.2, extra='opacity=".6"'))
+    b.append(text(F.mono, "THEN I MEASURED", 15, colB, 274, PAPER, 2.2, extra='opacity=".6"'))
     il = []
     for i, (where, la, lm, ls, ry, rh) in enumerate(rows):
         t0 = 1.0 + i * 1.9
         il.append(f'<path d="M48 {ry}H{W-48}" stroke="{PAPER}" stroke-opacity=".18"/>')
-        il.append(text(F.mono, where, 11.5, colA, ry + 26, PAPER, 1.6, extra='opacity=".55"'))
+        il.append(text(F.mono, where, 14.5, colA, ry + 28, PAPER, 1.3, extra='opacity=".65"'))
         g = [text(F.serif, ln, 32, colA, ry + 62 + j * 36, PAPER, extra='opacity=".62"') for j, ln in enumerate(la)]
         il.append(f'<g>{"".join(g)}{step("opacity", "0", "1", t0, 0.4, T)}</g>')
         for j, ln in enumerate(la):
@@ -186,80 +186,93 @@ def errata(F):
     return poster(H, INK, "\n".join(b), alt.replace('"', "'"))
 
 
-# ---------------------------------------------------------------- stat cards
-def card(F, name, big, sub, bg, fg, art, link_alt, w=590, h=360):
-    b = [text(F.mono, name, 13, 36, 52, fg, 2.2)]
-    size, tr = fit(F.disp, big, 104, 300, -0.02)
-    b.append(text(F.disp, big, size, 32, 168, fg, tr))
-    for i, ln in enumerate(F.mono.wrap(sub, 12.5, 290, 1.0)):
-        b.append(text(F.mono, ln, 12.5, 36, 214 + i * 21, fg, 1.0, extra='opacity=".8"'))
+# ---------------------------------------------------------------- stat cards (full width, readable)
+CH = 372
+
+
+def card(F, name, big, sub, bg, fg, art, alt):
+    b = [text(F.mono, name, 17, 48, 62, fg, 2.2)]
+    size, tr = fit(F.disp, big, 175, 480, -0.02)
+    b.append(text(F.disp, big, size, 44, 200, fg, tr))
+    for i, ln in enumerate(F.mono.wrap(sub, 18, 470, 0.6)):
+        b.append(text(F.mono, ln, 18, 48, 252 + i * 28, fg, 0.6, extra='opacity=".88"'))
     b.append(art)
-    return poster(h, bg, "\n".join(b), link_alt, w=w)
+    return poster(CH, bg, "\n".join(b), alt)
+
+
+def key(F, items, x, y, fg, gap=38):
+    out = []
+    for i, (shape, label) in enumerate(items):
+        yy = y + i * gap
+        out.append(shape(x, yy) + text(F.mono, label, 16, x + 30, yy + 6, fg, 0.8))
+    return "".join(out)
 
 
 def card_querypilot(F):
     T, g = 8, []
-    # 70 questions: 63 right first time, 4 more rescued by the correction loop, 3 still wrong
-    for i in range(70):
+    for i in range(70):  # 63 right first time, 4 rescued by the correction loop, 3 still wrong
         col, row = i % 10, i // 10
-        x, y = 336 + col * 24, 86 + row * 24
+        x, y = 620 + col * 36, 56 + row * 36
         if i < 63:
-            fill, extra = COBALT, step("opacity", "0", "1", 0.3 + i * 0.03, 0.2, T)
+            g.append(f'<rect x="{x}" y="{y}" width="29" height="29" rx="8" fill="{COBALT}">{step("opacity", "0", "1", 0.3 + i * 0.03, 0.2, T)}</rect>')
         elif i < 67:
-            fill, extra = ORANGE, step("opacity", "0", "1", 3.4 + (i - 63) * 0.5, 0.25, T)
+            g.append(f'<rect x="{x}" y="{y}" width="29" height="29" rx="8" fill="{ORANGE}">{step("opacity", "0", "1", 3.4 + (i - 63) * 0.5, 0.25, T)}</rect>')
         else:
-            g.append(f'<rect x="{x}" y="{y}" width="18" height="18" rx="5" fill="none" stroke="{INK}" stroke-width="2" stroke-opacity=".5"/>')
-            continue
-        g.append(f'<rect x="{x}" y="{y}" width="18" height="18" rx="5" fill="{fill}">{extra}</rect>')
-    key = (f'<rect x="336" y="268" width="12" height="12" rx="3" fill="{COBALT}"/>' + text(F.mono, "RIGHT FIRST TRY (63)", 11, 356, 279, INK, 1)
-           + f'<rect x="336" y="288" width="12" height="12" rx="3" fill="{ORANGE}"/>' + text(F.mono, "FIXED BY SELF-CORRECTION (4)", 11, 356, 299, INK, 1)
-           + f'<rect x="336" y="308" width="12" height="12" rx="3" fill="none" stroke="{INK}" stroke-opacity=".5" stroke-width="2"/>' + text(F.mono, "STILL WRONG (3)", 11, 356, 319, INK, 1))
-    return card(F, "QUERYPILOT  /  TEXT TO SQL", "95.7%", "On 70 test questions. It checks its own SQL and corrects it.", PAPER, INK,
-                f'<g>{"".join(g)}{fade_out(T)}</g>{key}', "QueryPilot. 95.7% of 70 test questions answered correctly after self-correction.")
+            g.append(f'<rect x="{x+1}" y="{y+1}" width="27" height="27" rx="7" fill="none" stroke="{INK}" stroke-width="2.5" stroke-opacity=".55"/>')
+    k = key(F, [(lambda x, y: f'<rect x="{x}" y="{y-8}" width="18" height="18" rx="5" fill="{COBALT}"/>', "63  FIRST TRY"),
+                (lambda x, y: f'<rect x="{x}" y="{y-8}" width="18" height="18" rx="5" fill="{ORANGE}"/>', "4  SELF-FIXED"),
+                (lambda x, y: f'<rect x="{x+1}" y="{y-7}" width="16" height="16" rx="4" fill="none" stroke="{INK}" stroke-width="2.5" stroke-opacity=".55"/>', "3  WRONG")],
+            1002, 120, INK)
+    return card(F, "QUERYPILOT  /  TEXT TO SQL", "95.7%", "Of 70 test questions, answered right. It checks its own SQL and corrects it.", PAPER, INK,
+                f'<g>{"".join(g)}{fade_out(T)}</g>{k}', "QueryPilot. 95.7% of 70 test questions answered correctly after self-correction.")
 
 
 def card_upi(F):
     T, g = 8, []
     for i in range(100):
         col, row = i % 10, i // 10
-        x, y = 336 + col * 24, 64 + row * 22
+        x, y = 620 + col * 31, 52 + row * 30
         if i < 92:
-            g.append(f'<rect x="{x}" y="{y}" width="18" height="18" rx="9" fill="{INK}">{step("opacity", "0", "1", 0.2 + i * 0.025, 0.2, T)}</rect>')
+            g.append(f'<circle cx="{x+12}" cy="{y+12}" r="12" fill="{INK}">{step("opacity", "0", "1", 0.2 + i * 0.025, 0.2, T)}</circle>')
         else:
-            g.append(f'<rect x="{x+1}" y="{y+1}" width="16" height="16" rx="8" fill="none" stroke="{INK}" stroke-width="2"/>')
-    key = (f'<circle cx="342" cy="312" r="6" fill="{INK}"/>' + text(F.mono, "REAL FRAUD (92)", 11, 356, 316, INK, 1)
-           + f'<circle cx="342" cy="334" r="6" fill="none" stroke="{INK}" stroke-width="2"/>' + text(F.mono, "FALSE ALARM (8)", 11, 356, 338, INK, 1))
+            g.append(f'<circle cx="{x+12}" cy="{y+12}" r="10.5" fill="none" stroke="{INK}" stroke-width="2.5"/>')
+    k = key(F, [(lambda x, y: f'<circle cx="{x+9}" cy="{y+1}" r="9" fill="{INK}"/>', "92  REAL FRAUD"),
+                (lambda x, y: f'<circle cx="{x+9}" cy="{y+1}" r="8" fill="none" stroke="{INK}" stroke-width="2.5"/>', "8  FALSE ALARM")],
+            956, 150, INK)
     return card(F, "UPI FRAUD ENGINE  /  REAL TIME", "92.06%", "Of alerts were real fraud, inside a 0.5% daily alert budget. p95 312 ms. 55+ leakage tests.", LIME, INK,
-                f'<g>{"".join(g)}{fade_out(T)}</g>{key}', "UPI Fraud Engine. 92.06% of alerts were real fraud inside a 0.5% daily alert budget.")
+                f'<g>{"".join(g)}{fade_out(T)}</g>{k}', "UPI Fraud Engine. 92.06% of alerts were real fraud inside a 0.5% daily alert budget.")
 
 
 def card_rag(F):
     T, g = 8, []
     for i in range(10):
-        y = 70 + i * 28
-        wd = 150 + (i * 53) % 90
+        y = 50 + i * 30
+        wd = 250 + (i * 53) % 130
         if i < 8:
-            g.append(f'<rect x="336" y="{y}" width="{wd}" height="20" rx="10" fill="{INK}">{step("width", "0", wd, 0.3 + i * 0.3, 0.5, T)}</rect>')
+            g.append(f'<rect x="620" y="{y}" width="{wd}" height="22" rx="11" fill="{INK}">{step("width", "0", wd, 0.3 + i * 0.3, 0.5, T)}</rect>')
         else:
-            g.append(f'<rect x="337" y="{y+1}" width="{wd-2}" height="18" rx="9" fill="none" stroke="{INK}" stroke-width="2" stroke-dasharray="5 5">{step("opacity", "0", "1", 0.3 + i * 0.3, 0.4, T)}</rect>')
-    stamp = (f'<g transform="rotate(-5 160 316)"><rect x="36" y="296" width="250" height="38" rx="9" fill="{INK}"/>'
-             + text(F.mono, "REFUSES WHEN IT CAN'T CITE", 12.5, 52, 320, PAPER, 1.2) + '</g>')
-    return card(F, "DRUG RAG  /  FDA + NICE", "0.80", "RAGAS faithfulness. Answers only from the documents, with citations. Not medical advice.", PINK, INK,
-                f'<g>{"".join(g)}{fade_out(T)}</g>{stamp}', "Evidence-Bound Drug RAG. RAGAS faithfulness 0.80, refuses when the documents are silent.")
+            g.append(f'<rect x="621" y="{y+1}" width="{wd-2}" height="20" rx="10" fill="none" stroke="{INK}" stroke-width="2.5" stroke-dasharray="6 6">{step("opacity", "0", "1", 0.3 + i * 0.3, 0.4, T)}</rect>')
+    k = key(F, [(lambda x, y: f'<rect x="{x}" y="{y-6}" width="22" height="12" rx="6" fill="{INK}"/>', "8  GROUNDED"),
+                (lambda x, y: f'<rect x="{x}" y="{y-6}" width="22" height="12" rx="6" fill="none" stroke="{INK}" stroke-width="2" stroke-dasharray="4 3"/>', "2  NOT")],
+            1022, 120, INK)
+    stamp = (f'<g transform="rotate(-4 280 340)"><rect x="48" y="318" width="340" height="40" rx="10" fill="{INK}"/>'
+             + text(F.mono, "REFUSES WHEN IT CAN'T CITE", 16, 66, 344, PAPER, 1.2) + '</g>')
+    return card(F, "DRUG RAG  /  FDA + NICE", "0.80", "RAGAS faithfulness. Cited answers from the documents only. Not medical advice.", PINK, INK,
+                f'<g>{"".join(g)}{fade_out(T)}</g>{k}{stamp}', "Evidence-Bound Drug RAG. RAGAS faithfulness 0.80, refuses when the documents are silent.")
 
 
 def card_tathya(F):
     T, g = 8, []
     for i, lab in enumerate(["GOVERNMENT", "MEDIA", "CITIZENS"]):
-        y = 112 + i * 62
-        g.append(text(F.mono, lab, 12, 336, y - 14, PAPER, 1.8, extra='opacity=".8"'))
-        g.append(f'<path d="M336 {y}C430 {y} 440 215 490 215" pathLength="1" fill="none" stroke="{LIME}" stroke-width="4" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="0">'
+        y = 96 + i * 92
+        g.append(text(F.mono, lab, 17, 640, y - 16, PAPER, 2.0, extra='opacity=".9"'))
+        g.append(f'<path d="M640 {y}C790 {y} 800 214 900 214" pathLength="1" fill="none" stroke="{LIME}" stroke-width="5" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="0">'
                  f'{step("stroke-dashoffset", "1", "0", 0.4 + i * 0.5, 0.9, T)}</path>')
-    g.append(f'<g><rect x="490" y="166" width="90" height="100" rx="10" fill="{PAPER}"/>'
-             f'<path d="M506 192h58M506 210h58M506 228h36" stroke="{INK}" stroke-width="5" stroke-linecap="round"/>'
+    g.append(f'<g><rect x="900" y="146" width="130" height="136" rx="14" fill="{PAPER}"/>'
+             f'<path d="M926 182h78M926 208h78M926 234h50" stroke="{INK}" stroke-width="7" stroke-linecap="round"/>'
              f'{step("opacity", "0", "1", 2.0, 0.4, T)}</g>')
-    g.append(text(F.mono, "CASE FILE", 11, 535, 290, PAPER, 1.6, "middle"))
-    return card(F, "TATHYA  /  A PUBLIC RECORD", "YOU DECIDE", "India's Union Government, from public sources: what government, media and citizens each said. Live and still being finished.", COBALT, PAPER,
+    g.append(text(F.mono, "CASE FILE", 16, 965, 320, PAPER, 2.0, "middle"))
+    return card(F, "TATHYA  /  A PUBLIC RECORD", "YOU DECIDE", "India's Union Government, from public sources: what government, media and citizens each said. Live, still being finished.", COBALT, PAPER,
                 f'<g>{"".join(g)}{fade_out(T)}</g>', "Tathya. Sources from government, media and citizens cluster into one sourced case file. You decide.")
 
 

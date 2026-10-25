@@ -141,7 +141,7 @@ def poster(h, bg, body, label, defs="", w=W):
 
 def header(F, no, left, right, fg):
     """The strip every poster shares: number and name on the left, address on the right."""
-    return (text(F.mono, f"{no}  /  {left}", 15, 48, 58, fg, 2.2) + text(F.mono, right, 15, W - 48, 58, fg, 2.2, "end"))
+    return (text(F.mono, f"{no}  /  {left}", 18, 48, 60, fg, 2.2) + text(F.mono, right, 18, W - 48, 60, fg, 2.2, "end"))
 
 
 def fit(face, s, size_max, maxw, tracking_em=0.0):

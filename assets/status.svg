@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="Live check of 5 things I have shipped. Checked 2026-10-25 21:15 UTC.">
-<rect width="1200" height="150" rx="22" fill="#0c0c10"/>
-<rect x=".5" y=".5" width="1199" height="149" rx="22" fill="none" stroke="#2a2a33"/>
-<text x="56" y="44" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="3" font-weight="700" fill="#f4f1ea">STILL UP</text>
-<text x="1144" y="44" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#8f8f98">CHECKED 2026-10-25 21:15 UTC, ONCE A DAY</text>
-<circle cx="62.0" cy="92" r="6" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
-<text x="78.0" y="88" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" font-weight="700" fill="#f4f1ea">BeatMind</text>
-<text x="78.0" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#8f8f98">up, 1283 ms</text>
-<circle cx="279.6" cy="92" r="6" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
-<text x="295.6" y="88" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" font-weight="700" fill="#f4f1ea">Kanata</text>
-<text x="295.6" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#8f8f98">up, 441 ms</text>
-<circle cx="497.2" cy="92" r="6" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
-<text x="513.2" y="88" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" font-weight="700" fill="#f4f1ea">Portfolio</text>
-<text x="513.2" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#8f8f98">up, 477 ms</text>
-<circle cx="714.8" cy="92" r="6" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
-<text x="730.8" y="88" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" font-weight="700" fill="#f4f1ea">Tabla Tuner</text>
-<text x="730.8" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#8f8f98">up, 557 ms</text>
-<circle cx="932.4" cy="92" r="6" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
-<text x="948.4" y="88" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" font-weight="700" fill="#f4f1ea">Tathya</text>
-<text x="948.4" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" fill="#8f8f98">up, 2886 ms</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="176" viewBox="0 0 1200 176" role="img" aria-label="Live check of 5 things I have shipped. Checked 2026-10-25 21:27 UTC.">
+<rect width="1200" height="176" rx="22" fill="#0c0c10"/>
+<rect x=".5" y=".5" width="1199" height="175" rx="22" fill="none" stroke="#2a2a33"/>
+<text x="56" y="52" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="16" letter-spacing="3" font-weight="700" fill="#f4f1ea">STILL UP</text>
+<text x="1144" y="44" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" letter-spacing="1.2" fill="#8f8f98">CHECKED 2026-10-25 21:27 UTC, ONCE A DAY</text>
+<circle cx="64.0" cy="112" r="8" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+<text x="84.0" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="23" font-weight="700" fill="#f4f1ea">BeatMind</text>
+<text x="84.0" y="140" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" fill="#8f8f98">up, 1457 ms</text>
+<circle cx="281.6" cy="112" r="8" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+<text x="301.6" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="23" font-weight="700" fill="#f4f1ea">Kanata</text>
+<text x="301.6" y="140" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" fill="#8f8f98">up, 446 ms</text>
+<circle cx="499.2" cy="112" r="8" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+<text x="519.2" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="23" font-weight="700" fill="#f4f1ea">Portfolio</text>
+<text x="519.2" y="140" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" fill="#8f8f98">up, 302 ms</text>
+<circle cx="716.8" cy="112" r="8" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+<text x="736.8" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="23" font-weight="700" fill="#f4f1ea">Tabla Tuner</text>
+<text x="736.8" y="140" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" fill="#8f8f98">up, 326 ms</text>
+<circle cx="934.4" cy="112" r="8" fill="#c8ff2e"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
+<text x="954.4" y="110" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="23" font-weight="700" fill="#f4f1ea">Tathya</text>
+<text x="954.4" y="140" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="17" fill="#8f8f98">up, 2026 ms</text>
 </svg>
