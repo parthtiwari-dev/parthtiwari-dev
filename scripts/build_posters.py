@@ -32,7 +32,7 @@ def draw(path, color, w, delay, dur, T, extra=""):
 
 # ---------------------------------------------------------------- hero
 def hero(F):
-    H, bx, by = 640, 1005, 392
+    H, bx, by = 640, W - 195, 392
     b = []
     for i in range(3):  # radar ripples behind the badge
         b.append(f'<circle cx="{bx}" cy="{by}" r="200" fill="none" stroke="{PAPER}" stroke-width="1.5" opacity=".2">'
@@ -331,6 +331,18 @@ def pill(F, label, bg, fg):
             f'{body}</svg>' + chr(10))
 
 
+def social_card(F):
+    """1280x640 card for link previews (GitHub repo social preview, Open Graph). Same hero, wider."""
+    import build_posters as me
+    old = me.W
+    me.W = 1280
+    try:
+        svg = hero(F)
+    finally:
+        me.W = old
+    return svg.replace('width="1200"', 'width="1280"').replace('viewBox="0 0 1200 640"', 'viewBox="0 0 1280 640"')
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--fonts", required=True)
@@ -343,6 +355,8 @@ if __name__ == "__main__":
                                 ("pill-repos", "ALL REPOSITORIES", INK, PAPER)):
         with open(os.path.join(a.out, f"{name}.svg"), "w", encoding="utf-8") as f:
             f.write(pill(F, label, bg, fg))
+    with open(os.path.join(a.out, "social-card.svg"), "w", encoding="utf-8") as f:
+        f.write(social_card(F))
     for name, fn in (("hero", hero), ("p01-beatmind", beatmind), ("p02-vivid", vivid), ("p03-arrivo", arrivo),
                      ("p04-kanata", kanata), ("p05-tabla", tabla), ("p06-mozart", mozart), ("hello", hello)):
         with open(os.path.join(a.out, f"{name}.svg"), "w", encoding="utf-8") as f:
